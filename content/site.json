@@ -1,0 +1,34 @@
+{
+  "name": "Demo Bakery",
+  "tagline": "Fresh bread, pastries and coffee, baked every morning in Austin.",
+  "description": "A neighborhood bakery. Sourdough, croissants, cakes to order, and good coffee.",
+  "phone": "(512) 555-0142",
+  "email": "hello@demobakery.example",
+  "address": {
+    "street": "1200 South Congress Ave",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78704"
+  },
+  "hours": [
+    { "days": "Monday to Friday", "open": "7:00 AM", "close": "4:00 PM" },
+    { "days": "Saturday", "open": "8:00 AM", "close": "3:00 PM" },
+    { "days": "Sunday", "open": "Closed", "close": "" }
+  ],
+  "social": [{ "label": "Instagram", "url": "https://instagram.com/demobakery" }],
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Menu", "href": "/menu/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "contact": {
+    "heading": "Say hello",
+    "intro": "Questions about an order, a cake for a birthday, or catering? Send a note and we will reply within a day.",
+    "formEndpoint": "https://formspree.io/f/your-form-id",
+    "successMessage": "Thanks! We got your message and will reply soon."
+  },
+  "theme": {
+    "accent": "#1f6f3f"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "heading": "Menu",
+  "intro": "Everything is baked the same morning it is sold. Items change with the season.",
+  "sections": [
+    {
+      "title": "Bread",
+      "items": [
+        { "name": "Country sourdough", "price": "$9", "note": "whole loaf" },
+        { "name": "Seeded rye", "price": "$10", "note": "whole loaf" },
+        { "name": "Baguette", "price": "$5" }
+      ]
+    },
+    {
+      "title": "Pastry",
+      "items": [
+        { "name": "Butter croissant", "price": "$4.50" },
+        { "name": "Almond croissant", "price": "$5.50" },
+        { "name": "Morning bun", "price": "$5", "note": "cardamom and orange" }
+      ]
+    },
+    {
+      "title": "Coffee",
+      "items": [
+        { "name": "Drip coffee", "price": "$3" },
+        { "name": "Latte", "price": "$5" },
+        { "name": "Cold brew", "price": "$4.50" }
+      ]
+    }
+  ]
+}

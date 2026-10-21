@@ -1,0 +1,23 @@
+# Greenfield starter-static: a static site on main plus a preview per pull request.
+# Static sites have no region or plan on Render; they are served from the global CDN.
+previews:
+  generation: automatic
+  expireAfterDays: 14
+
+services:
+  - type: web
+    name: starter-static
+    runtime: static
+    buildCommand: pnpm install --frozen-lockfile && pnpm build
+    staticPublishPath: ./out
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /404.html
