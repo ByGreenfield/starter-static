@@ -16,7 +16,7 @@ Read `content/site.json` first: it names the business and says what the site is 
 
 ## How to work
 
-1. Work on a branch named `change/<short-slug>`. Never push to `main`.
+1. Work on a branch. If your session already gave you one (cloud sessions create `claude/...` branches), use it; otherwise name it `change/<short-slug>`. Never push to `main`.
 2. Make the change. Prefer editing `content/` over components when the request is about words, prices, hours or pictures.
 3. Run `pnpm check`. It runs everything CI runs: lint, typecheck, unit tests, build, and the smoke suite against the build. Fix what fails before opening the PR.
 4. Open a pull request with:
@@ -34,7 +34,7 @@ Read `content/site.json` first: it names the business and says what the site is 
 
 ## Talking to the control plane
 
-The repo's `.mcp.json` points at the Greenfield Swarm MCP server. When it is available in your session, use it to check site status, find preview links, and request releases. If it is not available in a coding session, finish the PR and tell the user to ask for the preview or release in their Claude or ChatGPT chat, where the connector is installed.
+The repo's `.mcp.json` points at the Greenfield Swarm MCP server, and cloud sessions get it as the Greenfield Swarm connector instead. Use whichever is connected to check site status, find preview links, and request releases. If neither is connected, finish the PR and say so in one sentence; the owner can ask for the preview or release in their Claude chat, where the connector is installed. Do not mention the connection problem more than once.
 
 ## Useful commands
 
